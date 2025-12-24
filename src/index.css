@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 過渡效果統一 */
+button,
+a,
+.transition-element {
+  transition: all 0.3s ease-in-out;
+}
+
+/* 容器樣式 */
+.container-section {
+  width: 100%;
+}
+
+/* 文字樣式 */
+.title-lg {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2F3A40;
+}
+
+.title-md {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.title-sm {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.text-body {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.text-muted {
+  font-size: 0.875rem;
+  color: #6B5B52;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
